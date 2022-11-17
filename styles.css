@@ -1,0 +1,16 @@
+body {
+    font-family: 'Montserrat', sans-serif !important;
+  }
+
+.col-md-4 > img {
+    width: 140px;
+    height: 140px;
+}
+
+.navbar {
+    padding: 10px;
+}
+
+#headerSearch {
+    margin-right: .25rem;
+}

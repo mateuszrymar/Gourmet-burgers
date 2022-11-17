@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gourmet Burgers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,100;1,400&display=swap" rel="stylesheet">
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <header>       
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href=""><strong>Gourmet Burgers</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Locations</a>
+                    </li>
+                </ul>
+                <form class="d-inline-flex my-6">
+                    <input id="headerSearch" class="form-control mr-6" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="w-100" src="images/carousel1.jpg" alt="First slide">
+                <div class="carousel-caption">
+                    <h5>Made to order</h5>
+                    <p>With only the best ingredients.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100" src="images/carousel2.jpg" alt="Second slide">
+                <div class="carousel-caption">
+                    <h5>Over 50 types of burgers</h5>
+                    <p>Build your own!</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="#carouselControls" class="carousel-control-prev" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a href="#carouselControls" class="carousel-control-next" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+
+    </div>
+
+    <div class="container text-center my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <img class="rounded-circle" src="images/open.jpg" alt="restaurant's image">
+                <h2>Over 50 restaurants</h2>
+                <p>Treat yourself next time you're in the area!</p>
+                <p><a class="btn btn-secondary" href="" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <img class="rounded-circle" src="images/challenge.jpg" alt="eating challenge image">
+                <h2>Fancy a challenge?</h2>
+                <p>Why not try one of our famous burger eating challenges?</p>
+                <p><a class="btn btn-secondary" href="" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <img class="rounded-circle" src="images/sign.jpg" alt="reputation image">
+                <h2>Established in 1990</h2>
+                <p>Over 1.000 years of highest quality burgers!</p>
+                <p><a class="btn btn-secondary" href="" role="button">View details &raquo;</a></p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid bg-dark py-2">
+        <div class="row text-center">
+            <div class="col-md-7 text-light fst-italic">
+                <p>Sign up for exclusive offers...</p>
+            </div>
+            <div class="col-md-5">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#signup">
+                    Sign up here!
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal section -->
+    <div class="modal fade" id="signup">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <h5>Sign up for exclusive offers:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="nameInput">Your name:</label>
+                            <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="emailInput">Your email:</label>
+                            <input type="text" class="form-control" id="emailInput" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Your address:</label>
+                            <textarea class="form-control" id="address" rows="3" placeholder="Enter your address"></textarea>
+                        </div>
+                    
+                </div>
+                
+                <div class="modal-footer justify-content-between">
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="emailCheck" value="option1">
+                        <label class="form-check-label" for="emailCheck">Contact me by email?</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="postCheck" value="option1">
+                        <label class="form-check-label" for="postCheck">Contact me by post?</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid bg-light py-4 px-4">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>
+            &copy; 2022 Gourmet Burgers &middot;
+            <a href="">Home</a> &middot;
+            <a href="">Locations</a>
+
+        </p>
+
+    </footer>
+
+    <!-- Bootstrap links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+</body>
+</html>
